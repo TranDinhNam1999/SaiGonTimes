@@ -34,17 +34,17 @@
                                 {{/if}}
                             {{/if}}
                             <li class="active"><a href="/">Home</a></li>
-                            <li><a href="archive.html">Archive</a></li>
+                            {{!-- <li><a href="archive.html">Archive</a></li> --}}
                             <li><a href="#">Categories</a>
                                 <ul class="dropdown">
                                     {{#each lcAllcatdetail as |alias|}}
                                         <li>
-                                            <a href="/byCat/">{{CatName}}</a>
+                                            <a href="post/byCat/{{CatID}}">{{CatName}}</a>
                                             <ul class="dropdown">
                                                 {{#each lcAllSubCat as |alias|}}
                                                     {{#if (checkCatId CatID lcAllcatdetail.CatID)}}
                                                         <li>
-                                                        <a href="">{{SubCatName}}</a>
+                                                        {{!-- <a href="">{{SubCatName}}</a> --}}
                                                     </li>
                                                     {{/if}}
                                                     
@@ -61,8 +61,8 @@
                             {{else}}
                                 <li><a href="/account/register">premium</a></li>
                             {{/if}}
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            {{!-- <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li> --}}
                         </ul>
                     </div>
                     <!-- Nav End -->
