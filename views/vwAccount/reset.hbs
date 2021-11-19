@@ -102,7 +102,7 @@
     var dataSend = {oldPass: $("#txtOldPass").val(), id:$("#txtUserId").val()};
     dataSend=JSON.stringify({dataSend});
     $.ajax({
-      url:"http://localhost:3000/account/is-availableoldpass",
+      url:"https://sgtimes21.herokuapp.com/account/is-availableoldpass",
       type:"POST",
       data: 'info=' + dataSend,
       success: function(data){

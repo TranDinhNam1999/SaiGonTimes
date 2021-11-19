@@ -2,6 +2,8 @@ const express = require('express');
 const flash = require('connect-flash');
 const bodyParser = require('body-parser');
 const app = express();
+var cors = require('cors')
+app.use(cors())
 
 require('express-async-errors');
 app.use(express.urlencoded({

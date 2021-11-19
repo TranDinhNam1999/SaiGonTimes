@@ -485,7 +485,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         var dataSend={comment: $("#message").val(), postID:$("#txtPostID").val(), User: $("#txtUser").val()};
         dataSend=JSON.stringify({dataSend});
         $.ajax({
-            url:"http://localhost:3000/post/comment",
+            url:"https://sgtimes21.herokuapp.com/post/comment",
             type:"POST",
             data: 'info=' + dataSend,
             success : function(data) {    // Response is the PHP echo

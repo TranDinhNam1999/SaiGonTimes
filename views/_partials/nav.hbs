@@ -93,7 +93,9 @@
                             {{#if (isWriter lcAuthUser)}}
                                 <a href="/writer/write" class="dropdown-item">Submit post</a>
                             {{/if}}
-                            
+                            {{#if (isAdmin lcAuthUser)}}
+                                <a href="/admin/publish" class="dropdown-item">Publish post</a>
+                            {{/if}}
                         </div> 
                         </div>
                     {{else}}
@@ -102,7 +104,7 @@
                     {{/if}}
             {{#if lcIsAuthenticated}}
                 {{#if (isWriter lcAuthUser)}}
-                    <a href="writer/posts" class="submit-post"><span><i class="fa fa-cloud-upload"></i></span> <span class="video-text">Submit Post</span></a>
+                    <a href="writer/posts" class="submit-post"><span><i class="fa fa-cloud-upload"></i></span> <span class="video-text">My Posts</span></a>
                 {{/if}}
             {{/if}}
                 

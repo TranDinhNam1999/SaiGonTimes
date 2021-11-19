@@ -79,7 +79,7 @@
     var dataSend = {otpCode: $("#txtOtpcode").val(), id:$("#txtUser").val()};
     dataSend=JSON.stringify({dataSend});
     $.ajax({
-      url:"http://localhost:3000/account/check-otp",
+      url:"https://sgtimes21.herokuapp.com/account/check-otp",
       type:"POST",
       data: 'info=' + dataSend,
       success: function(data){

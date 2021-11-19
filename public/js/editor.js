@@ -31,7 +31,7 @@ $(document).ready(function() {
 })
 
 function changeStatus(data) {
-    callajax('http://localhost:3000/editor', 'post', JSON.stringify(data));
+    callajax('https://sgtimes21.herokuapp.com/editor', 'post', JSON.stringify(data));
 }
 
 function callajax(ajaxurl, method, datasend) {
