@@ -93,8 +93,13 @@
                             {{#if (isWriter lcAuthUser)}}
                                 <a href="/writer/write" class="dropdown-item">Submit post</a>
                             {{/if}}
-                            {{#if (isAdmin lcAuthUser)}}
+                            {{!-- {{#if (isAdmin lcAuthUser)}}
                                 <a href="/admin/publish" class="dropdown-item">Publish post</a>
+                            {{/if}} --}}
+                            {{#if (isAdmin lcAuthUser)}}
+                                <a href="/admin/categories/1" class="dropdown-item">Category mange</a>
+                                <a href="/admin/publish" class="dropdown-item">Publish post</a>
+                                <a href="/admin/users" class="dropdown-item">user manage</a>
                             {{/if}}
                         </div> 
                         </div>
@@ -104,7 +109,7 @@
                     {{/if}}
             {{#if lcIsAuthenticated}}
                 {{#if (isWriter lcAuthUser)}}
-                    <a href="writer/posts" class="submit-post"><span><i class="fa fa-cloud-upload"></i></span> <span class="video-text">My Posts</span></a>
+                    <a href="/writer/posts" class="submit-post"><span><i class="fa fa-cloud-upload"></i></span> <span class="video-text">My Posts</span></a>
                 {{/if}}
             {{/if}}
                 
